@@ -339,6 +339,11 @@ body::before{
   animation-delay:5.4s;
   opacity:0;
 }
+.omikuji-card.revealed .result-note-link{
+  animation:mistClear 1.8s ease forwards;
+  animation-delay:6.6s;
+  opacity:0;
+}
 .omikuji-card.revealed .takechan-area{
   animation:mistClear 2.5s ease forwards;
   animation-delay:8.5s;
@@ -387,6 +392,15 @@ body::before{
   border-top:1px solid rgba(255,255,255,0.08);
   width:100%;
   text-align:center;
+}
+
+.result-note-link{
+  margin-top:20px;
+  font-size:13px;font-weight:700;letter-spacing:1px;
+  color:#D94F1E;text-decoration:none;
+  border:1.5px solid rgba(217,79,30,0.5);
+  padding:10px 22px;border-radius:999px;
+  background:#fff;
 }
 
 /* ── DRAW BUTTON ── */
@@ -1330,6 +1344,7 @@ body{background:#FAFAF5;color:var(--dark);}
         <div class="result-keyword" id="result-keyword"></div>
         <div class="result-message" id="result-message"></div>
         <div class="result-support" id="result-support"></div>
+        <a class="result-note-link" id="result-note-link" href="https://note.com/takekasui/n/n1520667d524e" target="_blank" rel="noopener" data-ja="📖 このメッセージを深く読む（note）" data-en="📖 Read more on note" data-ko="📖 note에서 깊이 읽기" data-zh="📖 在 note 深入閱讀">📖 このメッセージを深く読む（note）</a>
       </div>
     </div>
   </div>
@@ -1847,6 +1862,7 @@ function setLang(lang) {
     document.getElementById('result-keyword').textContent = d.keyword;
     document.getElementById('result-message').textContent = d.message;
     document.getElementById('result-support').textContent = d.support;
+    updateResultNoteLink();
     document.getElementById('takechan-text').textContent = d.takechan || '';
   }
   // URL更新（シェアリンクの言語引き継ぎ）- iframe環境ではSecurityErrorになるためtry-catchで保護
@@ -2523,6 +2539,15 @@ function renderShareBtns(lang) {
   });
 }
 
+function updateResultNoteLink(){
+  var a = document.getElementById('result-note-link');
+  if (!a || !currentResult) return;
+  var el = currentResult.element || '';
+  a.href = el.indexOf('🔥☔') === 0
+    ? 'https://note.com/takekasui/n/n936a67ab849e'
+    : 'https://note.com/takekasui/n/n1520667d524e';
+}
+
 function drawOmikuji() {
   const card = document.getElementById('omikuji-card');
 
@@ -2544,6 +2569,7 @@ function drawOmikuji() {
   document.getElementById('result-keyword').textContent = d.keyword;
   document.getElementById('result-message').textContent = d.message;
   document.getElementById('result-support').textContent = d.support;
+  updateResultNoteLink();
 
   // glow color
   const glow = document.getElementById('card-bg-glow');
