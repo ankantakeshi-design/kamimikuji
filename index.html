@@ -349,6 +349,11 @@ body::before{
   animation-delay:7.4s;
   opacity:0;
 }
+.omikuji-card.revealed .result-ehon-link{
+  animation:mistClear 1.8s ease forwards;
+  animation-delay:8.0s;
+  opacity:0;
+}
 .omikuji-card.revealed .takechan-area{
   animation:mistClear 2.5s ease forwards;
   animation-delay:8.5s;
@@ -414,6 +419,14 @@ body::before{
   color:#fff;text-decoration:none;
   padding:10px 22px;border-radius:999px;
   background:linear-gradient(90deg,#FF8FAB,#7FB3E8);
+}
+.result-ehon-link{
+  display:inline-block;
+  margin-top:12px;
+  font-size:13px;font-weight:700;letter-spacing:1px;
+  color:#fff;text-decoration:none;
+  padding:10px 22px;border-radius:999px;
+  background:linear-gradient(90deg,#FFB35C,#FF7A59);
 }
 
 /* ── DRAW BUTTON ── */
@@ -1359,6 +1372,7 @@ body{background:#FAFAF5;color:var(--dark);}
         <div class="result-support" id="result-support"></div>
         <a class="result-note-link" id="result-note-link" href="https://note.com/takekasui/n/n1520667d524e" target="_blank" rel="noopener" data-ja="📖 このメッセージを深く読む（note）" data-en="📖 Read more on note" data-ko="📖 note에서 깊이 읽기" data-zh="📖 在 note 深入閱讀">📖 このメッセージを深く読む（note）</a>
         <a class="result-sodan-link" href="https://kasuisodan.pages.dev" target="_blank" rel="noopener">💑 夫婦のすれ違い実例集『火水相談』</a>
+        <a class="result-ehon-link" href="https://kasuiehon.pages.dev" target="_blank" rel="noopener">📖 火水絵本（物語絵本・理論絵本）</a>
       </div>
     </div>
   </div>
@@ -1622,6 +1636,25 @@ body{background:#FAFAF5;color:var(--dark);}
                 data-en="Real couple cases read through fire &amp; water"
                 data-ko="부부의 엇갈림을 불과 물로 읽는 실례집"
                 data-zh="用火水解讀夫妻誤解的實例集">夫婦のすれ違いを火水で読み解く実例集</div>
+            </div>
+          </div>
+          <div class="other-app-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+        </a>
+        <!-- 11: 火水絵本 -->
+        <a class="other-app-item app8" href="https://kasuiehon.pages.dev" target="_blank" rel="noopener noreferrer">
+          <div class="other-app-left">
+            <div class="other-app-emoji">📖</div>
+            <div>
+              <div class="other-app-title"
+                data-ja="火水絵本"
+                data-en="Kasui Picture Books"
+                data-ko="카스이 그림책"
+                data-zh="火水繪本">火水絵本</div>
+              <div class="other-app-desc"
+                data-ja="物語絵本と理論絵本が無料で読める"
+                data-en="Story and theory picture books, free to read"
+                data-ko="이야기 그림책과 이론 그림책을 무료로"
+                data-zh="故事繪本與理論繪本免費閱讀">物語絵本と理論絵本が無料で読める</div>
             </div>
           </div>
           <div class="other-app-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
