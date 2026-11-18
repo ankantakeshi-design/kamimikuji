@@ -1316,6 +1316,33 @@ body{background:#FAFAF5;color:var(--dark);}
 .pwa-step-icon{background:rgba(0,0,0,0.05);}
 .pwa-divider{background:rgba(0,0,0,0.08);}
 </style>
+<style id="one-by-one-2026-11-18">
+/* ONE-BY-ONE 2026-11-18 : 試食が先、説明は後。ファーストビューは「おみくじを引く」一つだけに絞る。並びと見せ方のみ変更（抽選ロジック・結果文は不変）。 */
+/* ── ヒーローを compact にして、引くボタンをファーストビュー内へ ── */
+.main-content{padding-top:24px;}
+.site-badge{margin-bottom:20px;padding-bottom:10px;}
+.title-area{margin-bottom:20px;}
+.hero-chara{width:min(190px,48vw);margin-bottom:2px;}
+.kigo{font-size:30px;margin-bottom:6px;}
+.main-title{margin-bottom:6px;}
+.catch-copy{line-height:1.9;margin-bottom:8px;}
+/* ── 引くボタン＝唯一の行動として大きく ── */
+.draw-btn{max-width:340px;font-size:18px;padding:22px 0;margin-bottom:8px;}
+/* ── 並び順：体験（引く→結果→シェア）が先、案内・説明は後ろへ ── */
+.site-badge{order:1;}
+.title-area{order:2;}
+.card-area{order:3;}
+.takechan-area{order:4;}
+.draw-btn{order:5;}
+.share-area{order:6;}
+.other-apps-section{order:7;}
+.profile-section{order:8;}
+.reviews-section{order:9;}
+.footer-cta{order:10;}
+.friend-share-section{order:11;}
+.pwa-install-section{order:12;}
+.faq-section{order:13;}
+</style>
 </head>
 <body>
 
