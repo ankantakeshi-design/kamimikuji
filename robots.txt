@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kamimikuji.pages.dev/sitemap.xml
