@@ -249,7 +249,7 @@
 <meta name="twitter:image" content="https://kamimikuji.pages.dev/ogp.png">
 
 <!-- テーマカラー（モバイルブラウザのアドレスバー） -->
-<meta name="theme-color" content="#0F0F1A">
+<meta name="theme-color" content="#FFFFFF">
 
 <!-- ════ PWA / ホーム画面追加 ════ -->
 <link rel="manifest" href="/manifest.json">
@@ -267,7 +267,7 @@
   gtag('js', new Date());
   gtag('config', 'G-YKVVXDTJKN');
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --fire: #D94F1E;
@@ -350,14 +350,14 @@ body::before{
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .main-title{
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:clamp(22px,6vw,32px);
   font-weight:900;
   letter-spacing:3px;
   margin-bottom:8px;
 }
 .catch-copy{
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:clamp(13px,3.2vw,16px);
   font-weight:400;
   letter-spacing:3px;
@@ -460,6 +460,21 @@ body::before{
   animation-delay:5.4s;
   opacity:0;
 }
+.omikuji-card.revealed .result-note-link{
+  animation:mistClear 1.8s ease forwards;
+  animation-delay:6.6s;
+  opacity:0;
+}
+.omikuji-card.revealed .result-sodan-link{
+  animation:mistClear 1.8s ease forwards;
+  animation-delay:7.4s;
+  opacity:0;
+}
+.omikuji-card.revealed .result-ehon-link{
+  animation:mistClear 1.8s ease forwards;
+  animation-delay:8.0s;
+  opacity:0;
+}
 .omikuji-card.revealed .takechan-area{
   animation:mistClear 2.5s ease forwards;
   animation-delay:8.5s;
@@ -485,7 +500,7 @@ body::before{
 }
 
 .result-keyword{
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:clamp(20px,5vw,26px);
   font-weight:900;
   letter-spacing:2px;
@@ -510,12 +525,37 @@ body::before{
   text-align:center;
 }
 
+.result-note-link{
+  margin-top:20px;
+  font-size:13px;font-weight:700;letter-spacing:1px;
+  color:#D94F1E;text-decoration:none;
+  border:1.5px solid rgba(217,79,30,0.5);
+  padding:10px 22px;border-radius:999px;
+  background:#fff;
+}
+.result-sodan-link{
+  display:inline-block;
+  margin-top:12px;
+  font-size:13px;font-weight:700;letter-spacing:1px;
+  color:#fff;text-decoration:none;
+  padding:10px 22px;border-radius:999px;
+  background:linear-gradient(90deg,#FF8FAB,#7FB3E8);
+}
+.result-ehon-link{
+  display:inline-block;
+  margin-top:12px;
+  font-size:13px;font-weight:700;letter-spacing:1px;
+  color:#fff;text-decoration:none;
+  padding:10px 22px;border-radius:999px;
+  background:linear-gradient(90deg,#FFB35C,#FF7A59);
+}
+
 /* ── DRAW BUTTON ── */
 .draw-btn{
   width:100%;
   max-width:320px;
   padding:20px 0;
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:16px;
   font-weight:700;
   letter-spacing:3px;
@@ -548,7 +588,7 @@ body::before{
   width:100%;
   max-width:240px;
   padding:15px 0;
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:14px;
   font-weight:400;
   letter-spacing:2px;
@@ -582,7 +622,7 @@ body::before{
 }
 
 .share-blessing{
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:18px;
   font-weight:400;
   letter-spacing:3px;
@@ -626,7 +666,7 @@ body::before{
 }
 
 .footer-cta-message{
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:clamp(12px,3.2vw,13px);
   line-height:1.5;
   letter-spacing:1px;
@@ -648,7 +688,7 @@ body::before{
   border:1px solid rgba(255,255,255,0.2);
   color:rgba(255,255,255,0.5);
   text-decoration:none;
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   font-size:clamp(11px,2.8vw,12px);
   font-weight:400;
   letter-spacing:1px;
@@ -816,7 +856,7 @@ body::before{
   justify-content: center;
   gap: 8px;
   padding: 12px 18px;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Zen Maru Gothic', serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 3px;
@@ -944,7 +984,7 @@ p.catch-copy {
   font-size:22px;
   font-weight:700;
   color:white;
-  font-family:'Noto Serif JP',serif;
+  font-family:'Zen Maru Gothic',serif;
   line-height:1.2;
 }
 .profile-school{
@@ -1076,7 +1116,7 @@ p.catch-copy {
   border-radius: 10px;
 }
 .other-app-title {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Zen Maru Gothic', serif;
   font-size: 14px;
   font-weight: 700;
   color: rgba(255,255,255,0.95);
@@ -1160,7 +1200,7 @@ p.catch-copy {
   gap: 16px;
 }
 .pwa-platform-title {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Zen Maru Gothic', serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1291,7 +1331,7 @@ p.catch-copy {
   width: 100%;
 }
 .reviews-title {
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Zen Maru Gothic', serif;
   font-size: clamp(16px, 4vw, 20px);
   font-weight: 700;
   letter-spacing: 3px;
@@ -1330,7 +1370,7 @@ p.catch-copy {
   animation: gradShift 4s ease infinite;
   color: #0F0F1A;
   text-decoration: none;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Zen Maru Gothic', serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1342,6 +1382,87 @@ p.catch-copy {
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(255,215,0,0.5);
 }
+</style>
+
+<style id="pop-restyle-2026">
+/* POP RESTYLE 2026-11-12 : bright blog-like theme. Delete this block to revert. */
+body{background:#FAFAF5;color:var(--dark);}
+.grad-text{background-image:linear-gradient(135deg,#FF7A40,#D94F1E 45%,#1A5FB8);}
+.site-badge{color:rgba(15,15,26,0.4);border-bottom-color:rgba(0,0,0,0.08);}
+.sub-desc{color:rgba(15,15,26,0.5);}
+.hero-chara{width:min(300px,70vw);height:auto;mix-blend-mode:multiply;margin-bottom:8px;}
+.omikuji-card{background:#ffffff;border-color:rgba(0,0,0,0.07);border-radius:20px;box-shadow:0 12px 32px rgba(0,0,0,0.07);}
+.omikuji-card.revealed{border-color:rgba(217,79,30,0.35);}
+.result-element-badge{border-color:rgba(0,0,0,0.18);color:rgba(15,15,26,0.75);font-weight:700;}
+.result-message{color:rgba(15,15,26,0.88);}
+.result-support{color:rgba(15,15,26,0.7);border-top-color:rgba(0,0,0,0.08);}
+.draw-btn{border:1.5px solid rgba(0,0,0,0.07);border-radius:999px;box-shadow:0 10px 24px rgba(217,79,30,0.18);}
+.retry-btn{color:rgba(15,15,26,0.55);border-color:rgba(0,0,0,0.18);}
+.retry-btn:hover{color:var(--dark);border-color:rgba(0,0,0,0.4);}
+.share-blessing{color:rgba(15,15,26,0.75);}
+.share-btn.copy:hover{background:rgba(0,0,0,0.08);}
+.takechan-bubble{background:#FFF6EE;border-color:rgba(217,79,30,0.18);border-radius:20px;}
+.takechan-name{color:rgba(15,15,26,0.45);}
+.takechan-text{color:rgba(15,15,26,0.92);}
+.takechan-icon{border-color:#ffffff;}
+.footer-cta-message{color:rgba(15,15,26,0.6);}
+.footer-cta-link{border-color:rgba(0,0,0,0.2);color:rgba(15,15,26,0.6);}
+.footer-cta-link:hover{color:var(--dark);border-color:rgba(0,0,0,0.4);}
+.lang-trigger{background:rgba(0,0,0,0.05);border-color:rgba(0,0,0,0.12);color:var(--dark);}
+.lang-trigger:hover{background:rgba(0,0,0,0.09);color:var(--dark);}
+.lang-btn{background:rgba(0,0,0,0.04);border-color:rgba(0,0,0,0.12);color:rgba(15,15,26,0.7);}
+.lang-btn:hover{background:rgba(0,0,0,0.08);color:var(--dark);}
+.lang-btn.active{background:rgba(0,0,0,0.12);border-color:rgba(0,0,0,0.3);color:var(--dark);}
+.faq-outer{background:#ffffff;border-color:rgba(0,0,0,0.08);border-radius:16px;}
+.faq-outer-summary{color:rgba(15,15,26,0.75);}
+.faq-outer[open] .faq-outer-summary{color:rgba(15,15,26,0.55);border-bottom-color:rgba(0,0,0,0.07);}
+.faq-item{border-color:rgba(0,0,0,0.08);background:#ffffff;}
+.faq-q{color:rgba(15,15,26,0.72);}
+.faq-item[open] .faq-q{color:var(--dark);border-bottom-color:rgba(0,0,0,0.07);}
+.faq-a{color:rgba(15,15,26,0.62);}
+.profile-section{background:#ffffff;border-color:rgba(0,0,0,0.07);border-radius:20px;box-shadow:0 8px 24px rgba(0,0,0,0.05);}
+.profile-name{color:var(--dark);}
+.profile-bio{color:rgba(15,15,26,0.65);}
+.other-apps-summary{color:rgba(15,15,26,0.8) !important;}
+.faq-outer[open] .other-apps-summary{color:var(--dark) !important;border-bottom-color:rgba(0,0,0,0.07);}
+.other-app-title{color:rgba(15,15,26,0.92);}
+.other-app-desc{color:rgba(15,15,26,0.55);}
+.other-app-arrow{color:rgba(15,15,26,0.35);}
+.reviews-title{background-image:linear-gradient(135deg,#B8860B,#D4A017,#B8860B);}
+.review-card{border-color:rgba(212,160,23,0.35);background:#ffffff;}
+.fshare-btn.threads{border-color:rgba(0,0,0,0.15);}
+.pwa-android-block,.pwa-ios-block{background:#ffffff;border-color:rgba(0,0,0,0.08);}
+.pwa-platform-title{color:rgba(15,15,26,0.65);}
+.pwa-step-text{color:rgba(15,15,26,0.75);}
+.pwa-step-icon{background:rgba(0,0,0,0.05);}
+.pwa-divider{background:rgba(0,0,0,0.08);}
+</style>
+<style id="one-by-one-2026-11-18">
+/* ONE-BY-ONE 2026-11-18 : 試食が先、説明は後。ファーストビューは「おみくじを引く」一つだけに絞る。並びと見せ方のみ変更（抽選ロジック・結果文は不変）。 */
+/* ── ヒーローを compact にして、引くボタンをファーストビュー内へ ── */
+.main-content{padding-top:24px;}
+.site-badge{margin-bottom:20px;padding-bottom:10px;}
+.title-area{margin-bottom:20px;}
+.hero-chara{width:min(190px,48vw);margin-bottom:2px;}
+.kigo{font-size:30px;margin-bottom:6px;}
+.main-title{margin-bottom:6px;}
+.catch-copy{line-height:1.9;margin-bottom:8px;}
+/* ── 引くボタン＝唯一の行動として大きく ── */
+.draw-btn{max-width:340px;font-size:18px;padding:22px 0;margin-bottom:8px;}
+/* ── 並び順：体験（引く→結果→シェア）が先、案内・説明は後ろへ ── */
+.site-badge{order:1;}
+.title-area{order:2;}
+.card-area{order:3;}
+.takechan-area{order:4;}
+.draw-btn{order:5;}
+.share-area{order:6;}
+.other-apps-section{order:7;}
+.profile-section{order:8;}
+.reviews-section{order:9;}
+.footer-cta{order:10;}
+.friend-share-section{order:11;}
+.pwa-install-section{order:12;}
+.faq-section{order:13;}
 </style>
 <script type="application/ld+json">
 {
@@ -1386,6 +1507,7 @@ p.catch-copy {
   <div class="site-badge" data-ja="心体調整塾" data-en="Mind-Body Adjustment School" data-ko="심체조정숙" data-zh="心體調整塾">心体調整塾</div>
 
   <div class="title-area">
+    <img class="hero-chara" src="chara-hero.png" alt="火と水のキャラクター">
     <div class="kigo">🔥☔</div>
     <!-- h1タグ追加（見出しSEO強化） -->
     <h1 class="main-title grad-text" data-ja="本日の火水おみくじ" data-en="Today's Fire &amp; Water Oracle" data-ko="오늘의 불과 물 오미쿠지" data-zh="今日的火水御神籤">本日の火水おみくじ</h1>
@@ -1411,6 +1533,9 @@ p.catch-copy {
         <div class="result-keyword" id="result-keyword"></div>
         <div class="result-message" id="result-message"></div>
         <div class="result-support" id="result-support"></div>
+        <a class="result-note-link" id="result-note-link" href="https://note.com/takekasui/n/n1520667d524e" target="_blank" rel="noopener" data-ja="📖 このメッセージを深く読む（note）" data-en="📖 Read more on note" data-ko="📖 note에서 깊이 읽기" data-zh="📖 在 note 深入閱讀">📖 このメッセージを深く読む（note）</a>
+        <a class="result-sodan-link" href="https://kasuisodan.pages.dev" target="_blank" rel="noopener">💑 夫婦のすれ違い実例集『火水相談』</a>
+        <a class="result-ehon-link" href="https://kasuiehon.pages.dev" target="_blank" rel="noopener">📖 火水絵本（物語絵本・理論絵本）</a>
       </div>
     </div>
   </div>
@@ -1654,6 +1779,45 @@ p.catch-copy {
                 data-en="12 Character Types ✏💃"
                 data-ko="12유형 캐릭터 ✏💃"
                 data-zh="12種角色類型 ✏💃">12タイプ・キャラクター✏💃</div>
+            </div>
+          </div>
+          <div class="other-app-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+        </a>
+
+        <!-- 10: 火水相談 -->
+        <a class="other-app-item app8" href="https://kasuisodan.pages.dev" target="_blank" rel="noopener noreferrer">
+          <div class="other-app-left">
+            <div class="other-app-emoji">💑</div>
+            <div>
+              <div class="other-app-title"
+                data-ja="火水相談｜夫婦のすれ違い実例集"
+                data-en="Kasui Sodan｜Couples' Misunderstanding Cases 💑"
+                data-ko="카스이 상담｜부부 엇갈림 실례집"
+                data-zh="火水相談｜夫妻誤解實例集">火水相談｜夫婦のすれ違い実例集</div>
+              <div class="other-app-desc"
+                data-ja="夫婦のすれ違いを火水で読み解く実例集"
+                data-en="Real couple cases read through fire &amp; water"
+                data-ko="부부의 엇갈림을 불과 물로 읽는 실례집"
+                data-zh="用火水解讀夫妻誤解的實例集">夫婦のすれ違いを火水で読み解く実例集</div>
+            </div>
+          </div>
+          <div class="other-app-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+        </a>
+        <!-- 11: 火水絵本 -->
+        <a class="other-app-item app8" href="https://kasuiehon.pages.dev" target="_blank" rel="noopener noreferrer">
+          <div class="other-app-left">
+            <div class="other-app-emoji">📖</div>
+            <div>
+              <div class="other-app-title"
+                data-ja="火水絵本"
+                data-en="Kasui Picture Books"
+                data-ko="카스이 그림책"
+                data-zh="火水繪本">火水絵本</div>
+              <div class="other-app-desc"
+                data-ja="物語絵本と理論絵本が無料で読める"
+                data-en="Story and theory picture books, free to read"
+                data-ko="이야기 그림책과 이론 그림책을 무료로"
+                data-zh="故事繪本與理論繪本免費閱讀">物語絵本と理論絵本が無料で読める</div>
             </div>
           </div>
           <div class="other-app-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
@@ -1929,6 +2093,7 @@ function setLang(lang) {
     document.getElementById('result-keyword').textContent = d.keyword;
     document.getElementById('result-message').textContent = d.message;
     document.getElementById('result-support').textContent = d.support;
+    updateResultNoteLink();
     document.getElementById('takechan-text').textContent = d.takechan || '';
   }
   // URL更新（シェアリンクの言語引き継ぎ）- iframe環境ではSecurityErrorになるためtry-catchで保護
@@ -2605,6 +2770,15 @@ function renderShareBtns(lang) {
   });
 }
 
+function updateResultNoteLink(){
+  var a = document.getElementById('result-note-link');
+  if (!a || !currentResult) return;
+  var el = currentResult.element || '';
+  a.href = el.indexOf('🔥☔') === 0
+    ? 'https://note.com/takekasui/n/n936a67ab849e'
+    : 'https://note.com/takekasui/n/n1520667d524e';
+}
+
 function drawOmikuji() {
   const card = document.getElementById('omikuji-card');
 
@@ -2626,6 +2800,7 @@ function drawOmikuji() {
   document.getElementById('result-keyword').textContent = d.keyword;
   document.getElementById('result-message').textContent = d.message;
   document.getElementById('result-support').textContent = d.support;
+  updateResultNoteLink();
 
   // glow color
   const glow = document.getElementById('card-bg-glow');
